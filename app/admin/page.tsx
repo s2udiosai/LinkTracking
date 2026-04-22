@@ -71,9 +71,14 @@ export default async function AdminPage() {
                     <td className="px-4 py-3 font-medium text-gray-900">{link.name}</td>
                     <td className="px-4 py-3">
                       <div className="flex items-center gap-2">
-                        <code className="bg-gray-100 px-2 py-0.5 rounded text-xs text-blue-700 break-all">
+                        <a
+                          href={trackingUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="bg-gray-100 px-2 py-0.5 rounded text-xs text-blue-700 break-all hover:bg-gray-200 hover:underline"
+                        >
                           {trackingUrl}
-                        </code>
+                        </a>
                         <CopyButton text={trackingUrl} />
                       </div>
                     </td>
